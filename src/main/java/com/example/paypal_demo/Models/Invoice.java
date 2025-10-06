@@ -13,7 +13,6 @@ public class Invoice {
     private int invoice_id;
     private String payer_name;
     private String seller_name;
-    private Date date;
     private Float amount;
     private Float extra_due;
     private String description;
@@ -21,11 +20,10 @@ public class Invoice {
     public Invoice() {
     }
 
-    public Invoice(int invoice_id, String payer_name, String seller_name, Date date, Float amount, Float extra_due, String description) {
+    public Invoice(int invoice_id, String payer_name, String seller_name, Float amount, Float extra_due, String description) {
         this.invoice_id = invoice_id;
         this.payer_name = payer_name;
         this.seller_name = seller_name;
-        this.date = date;
         this.amount = amount;
         this.extra_due = extra_due;
         this.description = description;
@@ -53,14 +51,6 @@ public class Invoice {
 
     public void setSeller_name(String seller_name) {
         this.seller_name = seller_name;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public Float getAmount() {
