@@ -17,8 +17,8 @@ public class InvoiceService {
         return repo.createInvoice(invoice);
     }
 
-    public String sendInvoice(Integer invoiceId){
-        return repo.sendInvoice(invoiceId);
+    public String sendInvoice(Invoice invoice){
+        return repo.sendInvoice(invoice);
     }
 
     public List<Invoice> getAllInvoices(){

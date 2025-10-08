@@ -18,18 +18,40 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int order_id;
     private String buyer_name;
+    private String buyer_email;
     private String seller_name;
+    private String seller_email;
     private Float amount;
     private String description;
     private String status;
 
-    public Order(int order_id, String buyer_name, String seller_name, Float amount, String description, String status) {
+
+
+    public String getBuyer_email() {
+        return buyer_email;
+    }
+
+    public Order(int order_id, String buyer_name, String buyer_email, String seller_name, String seller_email, Float amount, String description, String status) {
         this.order_id = order_id;
         this.buyer_name = buyer_name;
+        this.buyer_email = buyer_email;
         this.seller_name = seller_name;
+        this.seller_email = seller_email;
         this.amount = amount;
         this.description = description;
         this.status = status;
+    }
+
+    public void setBuyer_email(String buyer_email) {
+        this.buyer_email = buyer_email;
+    }
+
+    public String getSeller_email() {
+        return seller_email;
+    }
+
+    public void setSeller_email(String seller_email) {
+        this.seller_email = seller_email;
     }
 
     public int getOrder_id() {

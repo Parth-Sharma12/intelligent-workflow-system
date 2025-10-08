@@ -21,10 +21,10 @@ public class InvoiceController {
         return service.createInvoice(invoice);
     }
 
-    @PostMapping("/send_invoice/{invoiceId}")
-    public String sendInvoice(@PathVariable int invoiceId){
-        return service.sendInvoice(invoiceId);
-    }
+//    @PostMapping("/send_invoice/{invoiceId}")
+//    public String sendInvoice(@PathVariable int invoiceId){
+//        return service.sendInvoice(invoiceId);
+//    }
 
     @GetMapping("/get_all_invoices")
     public List<Invoice> getAllInvoices(){

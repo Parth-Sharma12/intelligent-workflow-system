@@ -10,6 +10,6 @@ import java.util.List;
 public interface InvoiceRepo {
     public Invoice createInvoice(Invoice invoice);
 
-    public String sendInvoice(int invoiceId);
+    public String sendInvoice(Invoice invoice);
     public List<Invoice> getAllInvoices();
 }
